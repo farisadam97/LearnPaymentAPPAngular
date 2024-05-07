@@ -4,17 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PaymentDetailsComponent } from './payment-details/payment-details.component';
 import { PaymentDetailFormComponent } from './payment-details/payment-detail-form/payment-detail-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaymentDetailsComponent,
-    PaymentDetailFormComponent
+    PaymentDetailFormComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
